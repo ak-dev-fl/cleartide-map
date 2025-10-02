@@ -1,0 +1,18 @@
+{
+  "tb-buoy-01": {
+    "name": "Prototype Buoy",
+    "status": "Active",
+    "temp_c": 28.6,
+    "chl_a": 3.4,
+    "turbidity": 0.25,
+    "last_update": "2025-10-02T12:00:00Z"
+  },
+  "tb-buoy-02": {
+    "name": "Backup Buoy",
+    "status": "Inactive",
+    "temp_c": 27.9,
+    "chl_a": 2.8,
+    "turbidity": 0.18,
+    "last_update": "2025-10-01T16:00:00Z"
+  }
+}
