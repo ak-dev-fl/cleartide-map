@@ -59,13 +59,14 @@ blooms.forEach(b => {
 // 2. Buoy Layer with live data
 // =======================
 
-// Custom buoy icon
+// Custom buoy icon (local file from repo)
 var buoyIcon = L.icon({
-  iconUrl: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
-  iconSize: [28, 28],
-  iconAnchor: [14, 28],
-  popupAnchor: [0, -28]
+  iconUrl: 'data/buoy.png',  // path to your saved PNG
+  iconSize: [32, 32],        // adjust size if needed
+  iconAnchor: [16, 32],      // bottom center of icon
+  popupAnchor: [0, -32]      // popup above the icon
 });
+
 
 var buoyLayer = L.layerGroup();
 
