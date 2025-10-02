@@ -1,0 +1,11 @@
+fetch('data/bloom.geojson')
+  .then(r => r.json())
+  .then(geo => {
+    L.geoJSON(geo, {
+      style: { color: 'red', weight: 2, fillOpacity: 0.35 },
+      onEachFeature: (feature, layer) => {
+        const s = feature.properties?.severity ?? 'n/a';
+        layer.bindPopup(`Bloom area<br>Severity: ${s}`);
+      }
+    }).addTo(map);
+  });
